@@ -4,11 +4,64 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Exercices base 3</title>
-      <link rel="stylesheet" href="style.css">
       <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+<div id="css">
+    <ul>
+        <li>CSS: The Definitive Guide</li>
+        <li>Eric Meyer</li>
+        <li><img src="https://covers.oreillystatic.com/images/0636920012726/lrg.jpg" alt=""></li>
+    </ul>
 
+
+    <ul>
+        <li>CSS Development with CSS3</li>
+        <li>Zachary Kingston</li>
+        <li><img src="https://covers.oreillystatic.com/images/0636920057970/lrg.jpg" alt=""></li>
+    </ul>
+
+    <ul>
+        <li>You Don't Know JS: Up & Going</li>
+        <li>Kyle Simpson</li>
+        <li><img src="https://covers.oreillystatic.com/images/0636920039303/lrg.jpg" alt=""></li>
+    </ul>
+</div>
+<div id="java">
+    <ul>
+        <li>'Programming JavaScript Applications</li>
+        <li>Eric Elliott</li>
+        <li><img src="https://covers.oreillystatic.com/images/0636920033141/lrg.jpg" alt=""></li>
+    </ul>
+
+    <ul>
+        <li>Modern JavaScript Develop and Design'</li>
+        <li>Ullman Larry</li>
+        <li><img src="https://www.booktopia.com.au/http_coversbooktopiacomau/big/9780321812520/modern-javascript.jpg" alt=""></li>
+    </ul>
+
+</div>
+
+    <button id="boutonC" onclick="function1()" > Java </button>
+    <button id="boutonJ" onclick="function2()"> Css </button>
 
     </body>
+
+    <script>
+
+    document.getElementById('boutonC').addEventListener("click", function1);
+    function function1() {
+    document.getElementById('css').style.display = 'none';
+        document.getElementById('java').style.display = 'block';
+    }
+
+    document.getElementById('boutonJ').addEventListener("click", function2);
+    function function2() {
+        document.getElementById('java').style.display = 'none';
+        document.getElementById('css').style.display = 'block';
+    }
+
+
+    </script>
 </html>
